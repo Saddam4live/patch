@@ -81,7 +81,7 @@ jobs:
         mkdir -p "$PUBLISH_DIR"
         echo "PUBLISH_DIR: $PUBLISH_DIR"
 
-        wget -nv -O $PUBLISH_DIR/CHANGELOG "https://${{ env.MIKRO_UPGRADE_URL }}/routeros/$VERSION/CHANGELOG"
+        wget -nv -O $PUBLISH_DIR/CHANGELOG "https://upgrade.mikrotik.com/routeros/$VERSION/CHANGELOG"
         cat $PUBLISH_DIR/CHANGELOG
 
 
